@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+
+  <ion-list>
+    <ion-item [routerLink]="['/page1']">Page1 </ion-item>
+    <ion-item [routerLink]="['/page2']">Page2</ion-item>
+    <ion-item [routerLink]="['/page3']">Page3 </ion-item>
+    <ion-item [routerLink]="['/page4']">Page4 </ion-item>
+  </ion-list>
+  <router-outlet></router-outlet>
+</ion-content>
